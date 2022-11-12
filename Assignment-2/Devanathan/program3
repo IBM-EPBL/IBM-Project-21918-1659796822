@@ -1,0 +1,32 @@
+from flask import Flask
+app = Flask(__name__)
+@app.route("/team")
+def course():
+return"""
+<h1>TEAM MEMBER</h1>
+<table border='1'>
+<caption> TEAM DETIALS </caption>
+<thead>
+<th>First Name</th>
+<th>Last Name</th>
+</thead>
+<tr>
+<td>devanathan</td>
+<td>K</td>
+</tr>
+<tr>
+<td>abinash</td>
+<td>R</td>
+</tr>
+<tr>
+<td>ajithkumar</td>
+<td>M</td>
+</tr>
+<tr>
+<td>anbuselvan</td>
+<td>R</td>
+</tr>
+<tr>
+</table>"""
+if __name__ == "__main__": 
+app.run(debug=True)
